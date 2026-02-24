@@ -1,33 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scroll-Driven Hero Section Animation
+
+This project recreates a hero section with scroll-driven animations inspired by a reference demo. It features smooth initial load animations and scroll-based interactions using GSAP.
+
+## Tech Stack
+
+- **Next.js** - React framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **GSAP** - Animation library
+- **TypeScript** - Type-safe JavaScript
+
+## Features
+
+- Hero section occupying the first screen
+- Letter-spaced headline with fade and movement animation on load
+- Statistics that animate in one by one
+- Scroll-driven animation for the main visual element (car image)
+- Smooth, performant animations using transforms
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` - Main page with hero section
+- `app/layout.tsx` - Root layout
+- `app/globals.css` - Global styles with Tailwind
 
-## Learn More
+## Animations
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Initial Load**: Headline fades in with slight movement, stats stagger in
+- **Scroll**: Car image translates and rotates based on scroll progress
 
 ## Deploy on Vercel
 
