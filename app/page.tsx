@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="section h-[200vh] relative bg-gradient-to-b from-red-900 via-black to-red-900 text-white">
+      <section className="section h-[200vh] relative bg-gradient-to-b from-orange-900 via-red-900 to-black text-white">
         <div className="track sticky top-0 h-screen flex items-center justify-center relative">
           <div className="road w-screen h-[200px] bg-black relative overflow-hidden">
             <img
@@ -106,6 +106,7 @@ export default function Home() {
             ></div>
             <div
               className="value-add absolute left-[5%] top-[15%] text-8xl font-bold flex gap-3 z-5 text-black"
+              style={{ WebkitTextStroke: '2px #ff0000' }}
               id="valueText"
             >
               <span className="value-letter opacity-0">W</span>
@@ -118,38 +119,38 @@ export default function Home() {
               <span className="value-letter opacity-0">&nbsp;</span>
               <span className="value-letter opacity-0">I</span>
               <span className="value-letter opacity-0">T</span>
-              <span className="value-letter opacity-0">Z</span>
-              <span className="value-letter opacity-0">F</span>
-              <span className="value-letter opacity-0">I</span>
-              <span className="value-letter opacity-0">Z</span>
-              <span className="value-letter opacity-0">Z</span>
+              <span className="value-letter opacity-0">S</span>
+              <span className="value-letter opacity-0">&nbsp;</span>
+              <span className="value-letter opacity-0">&nbsp;</span>
+              <span className="value-letter opacity-0">M</span>
+              <span className="value-letter opacity-0">E</span>
             </div>
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            style={{ top: '5%', right: '30%', background: '#ff4500', color: '#fff', boxShadow: '0 0 20px rgba(255, 69, 0, 0.8)' }}
             id="box1"
-            style={{ top: '5%', right: '30%', background: '#ff4500', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">58%</span> Increase in pick up point use
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            style={{ bottom: '5%', right: '35%', background: '#dc143c', color: '#fff', boxShadow: '0 0 20px rgba(220, 20, 60, 0.8)' }}
             id="box2"
-            style={{ bottom: '5%', right: '35%', background: '#dc143c', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">23%</span> Decreased in customer phone calls
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            style={{ top: '5%', right: '10%', background: '#8b0000', color: '#fff', boxShadow: '0 0 20px rgba(139, 0, 0, 0.8)' }}
             id="box3"
-            style={{ top: '5%', right: '10%', background: '#8b0000', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">27%</span> Increase in pick up point use
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            style={{ bottom: '5%', right: '12.5%', background: '#ff6347', color: '#fff', boxShadow: '0 0 20px rgba(255, 99, 71, 0.8)' }}
             id="box4"
-            style={{ bottom: '5%', right: '12.5%', background: '#ff6347', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">40%</span> Decreased in customer phone calls
           </div>
