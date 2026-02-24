@@ -93,9 +93,9 @@ export default function Home() {
         <div className="track sticky top-0 h-screen flex items-center justify-center relative">
           <div className="road w-screen h-[200px] bg-black relative overflow-hidden">
             <img
-              src="/bike1.jpg"
+              src="/bike5.jpg"
               alt="car"
-              className="car absolute top-0 left-0 h-[200px] w-[200px] z-10"
+              className="car absolute top-0 left-0 h-[200px] w-[420px] z-10"
               style={{ filter: 'drop-shadow(0 0 20px rgba(255, 0, 0, 0.8))' }}
               id="car"
             />
