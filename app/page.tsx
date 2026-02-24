@@ -19,7 +19,7 @@ export default function Home() {
     const letterOffsets = letters.map((letter) => letter.offsetLeft);
 
     const roadWidth = window.innerWidth;
-    const carWidth = 150;
+    const carWidth = 200;
     const endX = roadWidth - carWidth;
 
     gsap.to(car, {
@@ -27,11 +27,11 @@ export default function Home() {
         trigger: ".section",
         start: "top top",
         end: "bottom top",
-        scrub: true,
+        scrub: 2,
         pin: ".track",
       },
       x: endX,
-      ease: "none",
+      ease: "power2.out",
       onUpdate: function () {
         const carX = Number(gsap.getProperty(car, "x")) + carWidth / 2;
         letters.forEach((letter, i) => {
@@ -89,22 +89,23 @@ export default function Home() {
 
   return (
     <div>
-      <section className="section h-[200vh] relative bg-gray-900 text-white">
+      <section className="section h-[200vh] relative bg-gradient-to-b from-red-900 via-black to-red-900 text-white">
         <div className="track sticky top-0 h-screen flex items-center justify-center relative">
           <div className="road w-screen h-[200px] bg-black relative overflow-hidden">
             <img
-              src="/car1.webp"
+              src="/bike1.jpg"
               alt="car"
-              className="car absolute top-0 left-0 h-[200px] w-[150px] z-10"
+              className="car absolute top-0 left-0 h-[200px] w-[200px] z-10"
+              style={{ filter: 'drop-shadow(0 0 20px rgba(255, 0, 0, 0.8))' }}
               id="car"
             />
             <div
-              className="trail h-[200px] bg-green-500 absolute top-0 left-0 z-1"
+              className="trail h-[200px] bg-gradient-to-r from-orange-500 to-red-500 absolute top-0 left-0 z-1"
               id="trail"
               style={{ width: 0 }}
             ></div>
             <div
-              className="value-add absolute left-[5%] top-[15%] text-8xl font-bold flex gap-3 z-5"
+              className="value-add absolute left-[5%] top-[15%] text-8xl font-bold flex gap-3 z-5 text-black"
               id="valueText"
             >
               <span className="value-letter opacity-0">W</span>
@@ -127,37 +128,31 @@ export default function Home() {
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
             id="box1"
-            style={{ top: '5%', right: '30%', background: '#def54f', color: '#111' }}
+            style={{ top: '5%', right: '30%', background: '#ff4500', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">58%</span> Increase in pick up point use
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
             id="box2"
-            style={{ bottom: '5%', right: '35%', background: '#6ac9ff', color: '#111' }}
+            style={{ bottom: '5%', right: '35%', background: '#dc143c', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">23%</span> Decreased in customer phone calls
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
             id="box3"
-            style={{ top: '5%', right: '10%', background: '#333', color: '#fff' }}
+            style={{ top: '5%', right: '10%', background: '#8b0000', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">27%</span> Increase in pick up point use
           </div>
           <div
             className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
             id="box4"
-            style={{ bottom: '5%', right: '12.5%', background: '#fa7328', color: '#111' }}
+            style={{ bottom: '5%', right: '12.5%', background: '#ff6347', color: '#fff' }}
           >
             <span className="num-box text-6xl font-semibold">40%</span> Decreased in customer phone calls
           </div>
-        </div>
-      </section>
-      <section className="min-h-screen bg-white flex items-center justify-center px-4">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4">Scroll Down</h2>
-          <p className="text-lg text-gray-600">This is additional content to enable scrolling and see the animation effect.</p>
         </div>
       </section>
     </div>
