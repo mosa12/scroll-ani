@@ -90,7 +90,7 @@ export default function Home() {
   return (
     <div>
       <section className="section h-[200vh] relative bg-gray-900 text-white">
-        <div className="track sticky top-0 h-screen flex items-center justify-center">
+        <div className="track sticky top-0 h-screen flex items-center justify-center relative">
           <div className="road w-screen h-[200px] bg-black relative overflow-hidden">
             <img
               src="/car1.webp"
@@ -123,34 +123,34 @@ export default function Home() {
               <span className="value-letter opacity-0">Z</span>
               <span className="value-letter opacity-0">Z</span>
             </div>
-            <div
-              className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
-              id="box1"
-              style={{ top: '5%', right: '30%', background: '#def54f', color: '#111' }}
-            >
-              <span className="num-box text-6xl font-semibold">58%</span> Increase in pick up point use
-            </div>
-            <div
-              className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
-              id="box2"
-              style={{ bottom: '5%', right: '35%', background: '#6ac9ff', color: '#111' }}
-            >
-              <span className="num-box text-6xl font-semibold">23%</span> Decreased in customer phone calls
-            </div>
-            <div
-              className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
-              id="box3"
-              style={{ top: '5%', right: '10%', background: '#333', color: '#fff' }}
-            >
-              <span className="num-box text-6xl font-semibold">27%</span> Increase in pick up point use
-            </div>
-            <div
-              className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
-              id="box4"
-              style={{ bottom: '5%', right: '12.5%', background: '#fa7328', color: '#111' }}
-            >
-              <span className="num-box text-6xl font-semibold">40%</span> Decreased in customer phone calls
-            </div>
+          </div>
+          <div
+            className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            id="box1"
+            style={{ top: '5%', right: '30%', background: '#def54f', color: '#111' }}
+          >
+            <span className="num-box text-6xl font-semibold">58%</span> Increase in pick up point use
+          </div>
+          <div
+            className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            id="box2"
+            style={{ bottom: '5%', right: '35%', background: '#6ac9ff', color: '#111' }}
+          >
+            <span className="num-box text-6xl font-semibold">23%</span> Decreased in customer phone calls
+          </div>
+          <div
+            className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            id="box3"
+            style={{ top: '5%', right: '10%', background: '#333', color: '#fff' }}
+          >
+            <span className="num-box text-6xl font-semibold">27%</span> Increase in pick up point use
+          </div>
+          <div
+            className="text-box opacity-0 p-8 rounded-lg m-4 absolute z-5 flex flex-col justify-center items-start gap-1"
+            id="box4"
+            style={{ bottom: '5%', right: '12.5%', background: '#fa7328', color: '#111' }}
+          >
+            <span className="num-box text-6xl font-semibold">40%</span> Decreased in customer phone calls
           </div>
         </div>
       </section>
